@@ -1,0 +1,22 @@
+{
+  "AVR": {
+    "defines": [
+      "__AVR__"
+    ],
+    "lib": "C:\\arduino-1.8.2\\hardware\\tools"
+  },
+  "STM32F10X": {
+    "defines": [
+      "USE_STDPERIPH_DRIVER",
+      "STM32F10X_CL"
+    ],
+    "lib": null
+  },
+  "ESP32": {
+    "defines": [
+      "ESP_PLATFORM",
+      "ESP32"
+    ],
+    "lib": "C:\\Users\\dell\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\DFRobot_FireBeetle-ESP32\\0.0.7"
+  }
+}
