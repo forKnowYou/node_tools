@@ -28,10 +28,6 @@ class MyTools {
     })
   }
 
-  checkObjModule(obj: any, mod: any) : boolean {
-    
-  }
-
 }
 
 export const myTools = new MyTools()
