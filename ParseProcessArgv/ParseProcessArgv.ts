@@ -17,7 +17,7 @@ interface iParseProcessArgv {
   fUnexpectedArgv?: AnyFunction
 }
 
-function parseProcessArgv(iArgv: iParseProcessArgv) {
+export function parseProcessArgv(iArgv: iParseProcessArgv) {
   let argv = process.argv
   console.log(``)
   myTools.consoleWithColor(`argv: ${argv}`, "green")
@@ -50,8 +50,4 @@ function parseProcessArgv(iArgv: iParseProcessArgv) {
   for(let i = 0; i < funcs.length; i ++)
     funcs[i](aArg[i])
   iArgv.fCompelete()
-}
-
-export {
-  parseProcessArgv
 }

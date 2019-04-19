@@ -1,5 +1,5 @@
 
-let consoleColorDefines: AnyObject = {
+let consoleColorDefines = {
   black: 30,
   red: 31,
   green: 32,
@@ -20,10 +20,18 @@ class MyTools {
     console.log("\x1b[" + consoleColorDefines[color] + "m%s\x1b[0m", content)
   }
 
+  isInArray(obj: any, arr: AnyArray) : boolean {
+    return arr.some((i) => {
+      if(i === obj)
+        return true
+      return false
+    })
+  }
+
+  checkObjModule(obj: any, mod: any) : boolean {
+    
+  }
+
 }
 
-const myTools = new MyTools()
-
-export {
-  myTools
-}
+export const myTools = new MyTools()
